@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Radial Gradient Demo</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .a {
+            background: radial-gradient(at top, pink, blue); /* 中間上方 */
+        }
+
+        .b {
+            background: radial-gradient(at bottom, pink, blue); /* 中間下方 */
+        }
+
+        .c {
+            background: radial-gradient(at top right, pink, blue); /* 右上方 */
+        }
+
+        .d {
+            background: radial-gradient(at 60% 60%, pink, blue); /* 靠右下方 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box a"></div>
+        <div class="box b"></div>
+        <div class="box c"></div>
+        <div class="box d"></div>
+    </div>
+</body>
+</html>

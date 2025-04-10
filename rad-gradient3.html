@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>詩詞與漸層背景</title>
+    <style>
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .label {
+            width: 80px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .gradient {
+            flex: 1;
+            height: 50px;
+            border: 1px solid #ccc;
+        }
+
+        .spring {
+            background: repeating-linear-gradient(90deg, gold 0, gold 50px, orange 50px, orange 100px);
+        }
+
+        .farewell {
+            background: linear-gradient(15deg, red, white, blue);
+        }
+
+        .redbean {
+            background: repeating-radial-gradient(circle, orange, gold 10px);
+        }
+
+        .misc {
+            background: radial-gradient(circle at center, red, yellow, lightgreen);
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="label">春曉</div>
+        <div class="gradient spring"></div>
+    </div>
+
+    <div class="row">
+        <div class="label">送別</div>
+        <div class="gradient farewell"></div>
+    </div>
+
+    <div class="row">
+        <div class="label">紅豆</div>
+        <div class="gradient redbean"></div>
+    </div>
+
+    <div class="row">
+        <div class="label">雜詩</div>
+        <div class="gradient misc"></div>
+    </div>
+</body>
+</html>

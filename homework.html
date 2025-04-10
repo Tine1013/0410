@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 放射漸層作業</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: "標楷體", sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle, #a8e6ff, #3e9bd3); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .image {
+            width: 500px;
+            height: auto;
+            margin: 0 20px;
+        }
+
+        .text {
+            max-width: 400px;
+            font-size:35px;
+            color: #000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <img src="https://web.ntnu.edu.tw/~40047018S/rila_img/rila.png" alt="拉拉熊" class="image">
+
+        <div class="text">
+            <b>懶懶熊（日語：リラックマ Rirakkuma；英語：Rilakkuma）為日本San-X有限公司於2003年出品的卡通形象</b>
+        </div>
+
+        <img src="https://stickershop.line-scdn.net/stickershop/v1/product/6044/LINEStorePC/main.png;compress=true" alt="拉拉熊" class="image">
+    </div>
+
+</body>
+</html>
